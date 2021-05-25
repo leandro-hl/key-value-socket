@@ -1,0 +1,49 @@
+{
+  "name": "key-value-socket",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/server.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LeanHer94/key-value-socket.git"
+  },
+  "scripts": {
+    "build": "tsc --build",
+    "start": "node dist/server.js",
+    "dev": "nodemon --config nodemon.json src/server.ts",
+    "test": "mocha -r ts-node/register ./src/test/*.spec.ts",
+    "format": "prettier --write ./src/**/*.ts"
+  },
+  "author": "Leandro Hereñu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LeanHer94/key-value-socket/issues"
+  },
+  "homepage": "https://github.com/LeanHer94/key-value-socket#readme",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "error-api.hl": "^1.0.6",
+    "express": "^4.17.1",
+    "mongoose": "^5.12.10",
+    "ws": "^7.4.5"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.2.16",
+    "@types/express": "^4.17.11",
+    "@types/mocha": "^8.2.2",
+    "@types/mongoose": "^5.10.5",
+    "@types/sinon": "^10.0.0",
+    "@types/sinon-chai": "^3.2.5",
+    "@types/ws": "^7.4.4",
+    "chai": "^4.3.4",
+    "lint-staged": "^10.5.4",
+    "madge": "^4.0.2",
+    "mocha": "^8.3.2",
+    "nodemon": "^2.0.7",
+    "prettier": "2.2.1",
+    "sinon": "^11.1.0",
+    "sinon-chai": "^3.7.0",
+    "ts-node": "^9.1.1",
+    "typescript": "^4.2"
+  }
+}
