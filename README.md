@@ -9,23 +9,23 @@ Install Docker Desktop
 
 ### Linux:
 
-Install Docker
+Install Docker and Docker-compose
 
 ### Docker:
 
 #### Run in development mode:
 
-docker-compose -f docker-compose.yml -f docker-compose.dev.yml up -d
+sudo docker-compose -f docker-compose.yml -f docker-compose.dev.yml up -d
 
 Attach one of the configured debuggers using vs code if you want to debug tests/app/app inside Docker.
 
 #### Run in production mode:
 
-docker-compose -f docker-compose.yml -f docker-compose.prod.yml up -d
+sudo docker-compose -f docker-compose.yml -f docker-compose.prod.yml up -d
 
 #### To stop and remove the container group:
 
-docker-compose down
+sudo docker-compose down
 
 ### Notes:
 
