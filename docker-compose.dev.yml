@@ -1,0 +1,16 @@
+version: "3.9"
+
+services:
+  app:
+    image: app:dev
+    volumes:
+      - ./src:/app/src
+      - ./nodemon.json:/app/nodemon.json
+    ports:
+      - "3000:3000"
+      - "9230:9230"
+    expose:
+      - 3000
+    env_file:
+      - .env
+    command: npm run dev

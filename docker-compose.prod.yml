@@ -1,0 +1,13 @@
+version: "3.9"
+services:
+  app:
+    image: app:prod
+    build:
+      target: production
+    ports:
+      - "3001:3001"
+    expose:
+      - 3001
+    env_file:
+      - prod.env
+    command: node dist/server.js

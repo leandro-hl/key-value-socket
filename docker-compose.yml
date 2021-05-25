@@ -1,0 +1,21 @@
+version: "3.9"
+services:
+  app:
+    container_name: "app"
+    build:
+      context: .
+      target: base
+    depends_on:
+      - db
+
+  db:
+    container_name: "db"
+    image: "mongo"
+    volumes:
+      - data:/data/db
+    ports:
+      - "27017:27017"
+
+#named volume
+volumes:
+  data:

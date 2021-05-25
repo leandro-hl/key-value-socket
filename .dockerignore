@@ -1,0 +1,14 @@
+.vscode
+.yarn
+dist
+node_modules
+.dockerignore
+docker-compose.prod.yml
+docker-compose.yml
+.prettierrc.json
+.gitignore
+Dockerfile
+Makefile
+nodemon.json
+*.md 
+tslint.json
