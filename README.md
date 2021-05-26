@@ -29,4 +29,5 @@ sudo docker-compose down
 
 ### Notes:
 
-Keep in mind that both development and prod share the same container_name so when starting one or the other, the container would be recreated to meet the new configuration.
+- to get a key value use api/v1/keys/:key. Eg: api/v1/keys/cars
+- Keep in mind that both development and prod share the same container_name so when starting one or the other, the container would be recreated to meet the new configuration.
